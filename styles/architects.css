@@ -262,6 +262,23 @@ main{
     filter: grayscale(100%);
 }
 
+/* Footer Section Styles */
+
+footer{
+    max-width: 1440px;
+    border-radius: 8px;
+    background-color: #FFF4E7;
+    margin: 0 auto;
+}
+
+.footer-description{
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 39px;
+    padding-bottom: 39px;
+}
+
 /* Responsive Media Query */
 
 @media screen and (max-width: 576px) {
