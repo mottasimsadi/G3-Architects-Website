@@ -288,8 +288,12 @@ footer{
 /* Responsive Media Query */
 
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links, .teams, .features{
+    .navbar, .teams, .features{
         flex-direction: column;
+    }
+
+    .nav-links{
+        padding-left: 30px;
     }
 
     .team-img-container, .facts-container, .sponsors-companies{
