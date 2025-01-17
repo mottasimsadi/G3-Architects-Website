@@ -152,6 +152,63 @@ main{
     margin-bottom: 32px;
 }
 
+/* Features Section Related Styles */
+
+.features{
+    margin-bottom: 130px;
+    gap: 146px;
+}
+
+.feature-container{
+    max-width: 586px;
+}
+
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 21px;
+    margin-top: 39px;
+    margin-bottom: 24px;
+}
+
+.feature-section-description{
+    margin-bottom: 30px;
+}
+
+.feature-card{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.feature-card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.featured-architect img{
+    width: 100%;
+}
+
+#experience-badge{
+    padding: 45px 42px;
+    margin-left: -92px;
+    margin-top: -77px;
+    cursor: default;
+}
+
+#experience-year{
+    font-size: 4.063rem;
+    font-weight: 700;
+}
+
+#experience-text{
+    font-size: 1.563rem;
+    font-weight: 500;
+}
+
+
 /* Some Facts Related Styles */
 
 .facts-description{
@@ -208,7 +265,7 @@ main{
 /* Responsive Media Query */
 
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links, .teams{
+    .navbar, .nav-links, .teams, .features{
         flex-direction: column;
     }
 
@@ -222,7 +279,7 @@ main{
     }
 
     .facts-content{
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     .facts-container{
@@ -236,6 +293,10 @@ main{
         gap: 50px;
     }
 
+    #experience-badge{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
 }
 
 /* Medium Size Device */
@@ -245,13 +306,13 @@ main{
         margin-left: 30px;
     }
     
-    .teams{
+    .teams, .features{
         flex-direction: column;
     }
 
     .our-features{
         margin-top: 30px;
-        margin-left: 50px;
+        margin-left: -50px;
     }
 
     .facts-content{
@@ -268,5 +329,10 @@ main{
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
         gap: 50px;
+    }
+
+    #experience-badge{
+        margin-left: 20px;
+        margin-top: 20px;
     }
 }
