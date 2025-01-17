@@ -37,12 +37,18 @@
 .btn-primary{
     color: white;
     border-radius: 8px;
-    border: none;
+    border: 1px solid transparent;
     background-color: #FF900E;
     padding: 20px 25px;
     font-size: 1.25rem;
     font-weight: 600;
     cursor: pointer;
+}
+
+.btn-hover:hover{
+    color: #FF900E;
+    background-color: white;
+    border: 1px solid #FF900E;
 }
 
 main{
