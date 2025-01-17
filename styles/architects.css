@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    /* margin: 0;
-    padding: 0; */
+    margin: 0;
+    padding: 0;
     font-family: Work Sans;
 }
 
@@ -10,6 +10,10 @@
 
 .display-flex{
     display: flex;
+}
+
+.text-color{
+    color: #131313;
 }
 
 /* Dark-02 */
@@ -41,6 +45,11 @@
     cursor: pointer;
 }
 
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 /* Header Styles */
 
 
@@ -55,12 +64,13 @@
 .brand{
     font-size: 2.813rem;
     font-weight: 700;
-    color: #131313;
+    margin-top: 50px;
 }
 
 .nav-item{
     list-style: none;
     margin-right: 30px;
+    margin-top: 63px;
 }
 
 .nav-link{
@@ -80,13 +90,13 @@
     max-width: 862px;
     margin: 0 auto;
     text-align: center;
+    margin-top: 102px;
     margin-bottom: 50px;
 }
 
 .banner-title{
     font-size: 4rem;
     font-weight: 700;
-    color: #131313;
 }
 
 .banner-description{
@@ -97,12 +107,78 @@
 
 .banner-img{
     width: 100%;
+    margin-bottom: 45px;
+}
+
+/* Team and Feature Related Styles */
+
+.teams{
+    align-items: center;
+    margin-bottom: 130px;
+}
+
+.team-img-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-features{
+    margin-left: 73px;
+    max-width: 537px;
+}
+
+.feature-title{
+    font-size: 2.813rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+#quick-list{
+    font-weight: 500;
+}
+
+#feature-text{
+    color: #FF900E;
+}
+
+.feature-description{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 32px;
 }
 
 /* Responsive Media Query */
 
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links{
+    .navbar, .nav-links, .teams{
         flex-direction: column;
+    }
+
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .our-features{
+        margin-top: 24px;
+        margin-left: 20px;
+    }
+}
+
+/* Medium Size Device */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .brand{
+        margin-left: 30px;
+    }
+    
+    .teams{
+        flex-direction: column;
+    }
+
+    .our-features{
+        margin-top: 24px;
+        margin-left: 50px;
     }
 }
