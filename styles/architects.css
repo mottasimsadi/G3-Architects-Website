@@ -338,6 +338,10 @@ footer{
         margin-left: -50px;
     }
 
+    .feature-container{
+        margin: 0 auto;
+    }
+
     .facts-content{
         margin-left: 100px;
     }
